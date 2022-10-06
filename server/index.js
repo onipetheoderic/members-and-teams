@@ -19,14 +19,19 @@ const server = createServer({
     `,
     resolvers: {
       Query: {
-        allMembers: () =>
-          members.map((member) => ({
+        allMembers: () => {
+          if (Math.random() < 0.2) {
+            return [];
+          }
+
+          return members.map((member) => ({
             ...member,
             colleagues: () =>
               member.workedWith.map((memberId) =>
                 members.find((m) => m.id === memberId)
               ),
-          })),
+          }));
+        },
       },
     },
   },
