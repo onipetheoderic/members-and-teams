@@ -5,9 +5,10 @@
 3. Run `yarn run server`
 4. Run `expo start`
 
-# How to create a component
+# How the solution could be improved, if you had more time, or if this had been a production application.
 
-In this implementation, Plop is used to generate the components, screens etc. In later implementation, plop would be modified to generate hooks, and default test converage
+- usage of typescript
+- extensive setup of Plop for easy component generation
 
 # How you would implement the “Click to add member” feature
 
