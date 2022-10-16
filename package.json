@@ -1,0 +1,66 @@
+{
+  "name": "members-and-teams",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "server": "babel-node server",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "g": "plop",
+    "test": "jest",
+    "testWithCoverage": "jest --verbose --updateSnapshot --watch --coverage && open ./coverage/lcov-report/index.html"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ],
+    "testPathIgnorePatterns": [
+      "src/__tests__/components/mock"
+    ],
+    "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.0",
+    "@expo-google-fonts/poppins": "^0.2.2",
+    "@graphql-yoga/node": "^2.13.13",
+    "@react-navigation/native": "^6.0.13",
+    "@react-navigation/native-stack": "^6.9.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react-native": "^11.2.0",
+    "expo": "~46.0.13",
+    "expo-app-loading": "~2.1.0",
+    "expo-status-bar": "~1.4.0",
+    "graphql": "^16.6.0",
+    "jest": "^26.6.3",
+    "lodash": "^4.17.21",
+    "react": "18.0.0",
+    "react-native": "0.69.6",
+    "react-native-safe-area-context": "4.3.1",
+    "react-native-screens": "~3.15.0",
+    "react-native-svg": "9.3.3",
+    "styled-components": "^5.3.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/node": "^7.19.1",
+    "@testing-library/jest-native": "^5.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "jest-expo": "^46.0.1",
+    "plop": "^3.1.1",
+    "react-native-testing-library": "^6.0.0",
+    "react-test-renderer": "^18.2.0"
+  },
+  "private": true
+}

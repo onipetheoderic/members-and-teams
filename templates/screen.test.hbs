@@ -1,0 +1,9 @@
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { {{ pascalCase name }} } from '../../../screens';
+
+
+it('{{ pascalCase name }} Renders without crashing', () => {
+    const rendered = renderer.create(<{{ pascalCase name }} />).toJSON();
+    expect(rendered).toBeTruthy();
+});
